@@ -1,24 +1,7 @@
 class UsersController < ApplicationController
-  def index
-  end
 
+  #Profile of the User - other user functions (Sign In etc. handled by Devise)
   def show
-  end
-
-  def new
-    @user = User.new
-  end
-
-  def create
-  end
-
-  def edit
-    @user
-  end
-
-  def update
-  end
-
-  def destroy
+    @user = User.find(params[:id])
   end
 end
